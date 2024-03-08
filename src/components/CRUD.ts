@@ -361,10 +361,10 @@ export default class CRUD {
           '...b ',
           `
         ${this.parent.idsNoDefault
-          .map((id) => {
-            return `${id.name}:this.${id.name}Gen()`;
-          })
-          .join(`,`)}
+            .map((id) => {
+              return `${id.name}:this.${id.name}Gen()`;
+            })
+            .join(`,`)}
          , ...b `,
         );
         // console.log(fix);
@@ -373,10 +373,10 @@ export default class CRUD {
           '...body',
           `
         ${this.parent.idsNoDefault
-          .map((id) => {
-            return `${id.name}:this.${id.name}Gen()`;
-          })
-          .join(`,`)}
+            .map((id) => {
+              return `${id.name}:this.${id.name}Gen()`;
+            })
+            .join(`,`)}
          , ...body
         `,
         );
@@ -484,7 +484,7 @@ export default class CRUD {
     } from './${this.parent.nameCamel}.entity';`,
     );
     res.push(`import { plainToInstance } from 'class-transformer';`);
-    res.push(`import { PrismaService } from 'src/shared/services/prisma.service';`);
+    res.push(`import { PrismaService } from 'nestjs-prisma';`);
     res.push(`import { UserGeneralDto } from 'src/shared/dtos/user.dto';`);
     res.push(`import { User as UserDecorator } from 'src/shared/decorators/user.decorator';    `);
     res.push(

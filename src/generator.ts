@@ -10,7 +10,7 @@ import { importGenerator, moduleGenerator } from './templates';
 import { prettierFormatFormat, writeTSFile } from './util';
 
 export const GENERATOR_NAME = 'Prisma Code Generator';
-export interface PrismaCodeGeneratorConfig {}
+export interface PrismaCodeGeneratorConfig { }
 
 export class PrismaGenerator {
   static instance: PrismaGenerator;

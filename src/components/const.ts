@@ -249,7 +249,6 @@ export const fixedConfig: fixedConfigInterface = {
         },
       ],
     },
-
     updateOne: {
       body: 'UPDATE_DTO',
       param: 'CONNECT_DTO',
@@ -372,7 +371,6 @@ export const fixedConfig: fixedConfigInterface = {
         },
       ],
     },
-
     deleteOne: {
       param: 'CONNECT_DTO',
       fixedPath: '',
@@ -634,7 +632,6 @@ export const fixedConfig: fixedConfigInterface = {
         },
       ],
     },
-
     updateAdminOne: {
       admin: true,
       param: 'CONNECT_ADMIN_DTO',
@@ -742,7 +739,6 @@ export const fixedConfig: fixedConfigInterface = {
         },
       ],
     },
-
     deleteAdminOne: {
       admin: true,
       param: 'CONNECT_ADMIN_DTO',
